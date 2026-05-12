@@ -91,7 +91,7 @@
           gainNode = audioContext.createGain();
 
           delayNode.delayTime.value = Number(delaySlider.value) / 1000;
-          gainNode.gain.value = 0.9;
+          gainNode.gain.value = 5;
 
           sourceNode.connect(delayNode);
           delayNode.connect(gainNode);
